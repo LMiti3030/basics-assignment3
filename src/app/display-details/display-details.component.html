@@ -1,9 +1,0 @@
-<button class="btn btn-primary"
-(click)="onDisplayClick()">Display Details </button>
-<p *ngIf="showSecretParagraph">{{ messageSecretParagraph }}</p>
-<p *ngFor="let display of displays; index as i "
-[ngStyle]="{'background-color' : setColor(i)}"
-[ngClass]="{five: i>=5}">
-        {{ display }}
- </p>
-

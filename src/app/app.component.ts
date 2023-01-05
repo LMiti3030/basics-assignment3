@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'basics-assignment3';
+
+  showSecret = false;
+  log : number[] = []; //empty array
+
+  onToggleDetails(){
+    this.showSecret = !this.showSecret;
+    this.log.push(this.log.length + 1);
+  }
+
 }
